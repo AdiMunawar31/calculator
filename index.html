@@ -27,6 +27,18 @@
 
         }
 
+        .calculator .container {
+            grid-column: span 4;
+            height: 30px;
+            text-align: center;
+            border: none;
+            margin-bottom: 70px;
+            color: rgb(40, 240, 0);
+            font-size: 26px;
+            background: rgb(44, 67, 87);
+            outline: none;
+        }
+
         .calculator .hasil {
             grid-column: span 4;
             height: 80px;
@@ -74,8 +86,13 @@
 
 <body>
 
+
     <form name="cal" class="calculator">
 
+        <div class="container">
+            <h3>CALCULATOR BY ~</h3>
+            <p><i>Adi Munawar</i></p>
+        </div>
         <input type="text" name="inputan" class="hasil" readonly>
         <span class="num c" onclick="document.cal.inputan.value = '' ">C</span>
         <span class="num" onclick="document.cal.inputan.value += '/' ">/</span>
@@ -96,7 +113,9 @@
         <span class="num" onclick="document.cal.inputan.value += '0' ">0</span>
         <span class="num" onclick="document.cal.inputan.value += '.' ">.</span>
 
+
     </form>
+
 
 </body>
 
